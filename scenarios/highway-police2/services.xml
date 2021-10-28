@@ -8,10 +8,7 @@
         <listener port="8001" />
         <filters><name pattern="police0" match="inverse" /></filters>
     </service>
-    <service type="artery.application.CaService">
+    <service type="artery.application.CaService" name="CA">
 	<listener port="2001" />
-	<filters>
-		<type pattern="artery.inet.Person" match="inverse" />
-	</filters>
     </service>
 </services>
